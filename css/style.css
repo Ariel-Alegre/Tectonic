@@ -383,6 +383,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 230px;
   margin-left: -70px;
   border-radius: 20px;
+  margin-top: -30px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -708,14 +709,15 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 400;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  font-size: 35px;
   
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h1 {
   font-weight: 400;
   color: white;
   filter: unset;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
 
 }
 @media screen and (max-width: 768px) {
