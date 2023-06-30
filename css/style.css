@@ -12,7 +12,8 @@
 *
 * ======================================================= */
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -27,19 +28,26 @@ a {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 a:hover, a:active, a:focus {
   color: black;
   outline: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 p {
   margin-bottom: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
   font-weight: 400;
   margin: 0 0 30px 0;
 }
@@ -58,7 +66,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Open Sans", Arial, sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 30px;
@@ -68,6 +76,8 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 .btn.btn-md {
   padding: 10px 20px !important;
@@ -370,23 +380,32 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-header .header-inner img {
-  width: 150px;
+  width: 230px;
+  margin-left: -70px;
+  border-radius: 20px;
 }
 
-@media  screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
+  #fh5co-header {
+    position: fixed;
+  }
   #fh5co-header .header-inner img {
     width: 80px;
-    position: fixed;
     margin-top: 10px;
+    margin-left: 0px;
   }
 }
 
-@media only  screen and(max-width: 780px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   #fh5co-header .header-inner img {
-    width: 100px;
-    position: fixed;
+    width: 130px;
+    margin-top: 10px;
+    margin-left: 0px;
   }
+
 }
+
+
 
 
 #fh5co-header h1 {
@@ -400,14 +419,13 @@ h1, h2, h3, h4, h5, h6, figure {
   color: white;
 }
 #fh5co-header h1 a > span {
-  color: #00B906;
 }
 #fh5co-header h1 a:hover, #fh5co-header h1 a:active, #fh5co-header h1 a:focus {
   text-decoration: none;
   outline: none;
 }
 #fh5co-header h1, #fh5co-header nav {
-  margin: 38px 0 0 0;
+  margin: 38px 0px 0px 0px;
 }
 #fh5co-header nav {
   float: right;
@@ -517,30 +535,99 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: scaleX(1);
 }
 
+.text-video-text {
+
+}
+
+.text-video {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -80px;
+  
+  
+}
+
 .text-video h1 {
   font-size: 60px;
   font-weight: 400;
-  position: absolute;
   color: white;
-margin-left: 35%;
-margin-top: 20%;
+  
 }
 .text-video p {
-  font-size: 4ch;
+  font-size: 19px;
   font-weight: 400;
-  position: absolute;
   color: white;
-margin-left: 10%;
-margin-top: 25%;
+  
+}
+.list-video {
+  color: white;
+  display: flex;
+  gap: 130px;
+  margin-left: -200px;
+
+}
+.span-video {
+  display: grid;
+  color: white;
+  margin-top: 40px;
+}
+
+.span-video span{
+  color: white;
 }
 
 .video-container video {
+  margin-top: -250px;
   position: relative;
   width: 100%;
   height: auto;
-  z-index: -1; 
+  z-index: -1;
+
  filter: brightness(50%);
 }
+
+@media only screen and (max-width: 480px) {
+  .video-container {
+    margin-top: 80px;
+  }
+  .text-video h1 {
+     font-size: 17px;
+     margin-top: 50px;
+  }
+
+  .text-video p {
+    font-size: 11px;
+    font-weight: 400;
+    color: white;
+    
+  }
+
+  .list-video span{
+    display: none;
+  }
+
+  .span-video {
+    display: none;
+
+ 
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .list-video span{
+    display: none;
+  }
+  .span-video {
+    display: none;
+
+    
+     }
+}
+
+
 @keyframes slideIn {
   0% { transform: translateX(-100%); opacity: 0; }
   100% { transform: translateX(0); opacity: 1; }
@@ -604,11 +691,14 @@ margin-top: 25%;
   opacity: 0;
   min-height: 700px;
   filter: unset;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner {
   display: table-cell;
   vertical-align: middle;
   min-height: 700px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 
 
@@ -617,12 +707,16 @@ margin-top: 25%;
   font-size: 40px;
   font-weight: 400;
   color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
   
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h1 {
   font-weight: 400;
   color: white;
   filter: unset;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 @media screen and (max-width: 768px) {
   #fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
@@ -638,6 +732,8 @@ margin-top: 25%;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .fh5co-lead .icon-heart {
   color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 #fh5co-why-us, .fh5co-services {
@@ -651,28 +747,42 @@ margin-top: 25%;
 #fh5co-why-us .item-block, .fh5co-services .item-block {
   margin-bottom: 7em;
   float: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 #fh5co-why-us .item-block .icon, .fh5co-services .item-block .icon {
   display: block;
   margin-bottom: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 #fh5co-why-us .item-block .icon img, .fh5co-services .item-block .icon img {
   max-width: inherit;
   height: 90px;
   margin: 0 auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 #fh5co-why-us .item-block h3, .fh5co-services .item-block h3 {
   font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 #fh5co-why-us .item-block p:last-child, .fh5co-services .item-block p:last-child {
   margin-bottom: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 .fh5co-heading {
   margin-bottom: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 .fh5co-heading h2 {
   margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 .fh5co-section-with-image {
@@ -695,14 +805,7 @@ margin-top: 25%;
     width: 100%;
     margin-top: auto !important;
   }
-  .text-video h1 {
-    font-size: 40px;
- }
- .text-video p{
-   font-size: 20px;
-   margin-top: 250px;
-   text-align: center;
-}
+
 }
 @media screen and (max-width: 480px) {
   .fh5co-section-with-image .fh5co-box {
@@ -711,15 +814,21 @@ margin-top: 25%;
     bottom: auto;
     width: 100%;
     padding: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
   }
 }
 .fh5co-section-with-image h2 {
   font-size: 50px;
   margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 @media screen and (max-width: 768px) {
   .fh5co-section-with-image h2 {
     font-size: 32px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
   }
 }
 .fh5co-section-with-image p {
@@ -728,23 +837,33 @@ margin-top: 25%;
 @media screen and (max-width: 768px) {
   .fh5co-section-with-image p {
     font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
   }
 }
 .fh5co-section-with-image p:last-child {
   margin-bottom: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 #fh5co-testimonial {
   background: #fff;
   padding: 7em 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 @media screen and (max-width: 768px) {
   #fh5co-testimonial {
     padding: 3em 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
   }
 }
 #fh5co-testimonial .item-block {
   margin-bottom: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 #fh5co-testimonial .item-block blockquote {
   margin-bottom: 70px;
@@ -868,13 +987,7 @@ margin-top: 25%;
   #map {
     height: 200px;
   }
-  .text-video h1 {
-    font-size: 20px;
- }
- .text-video p{
-   font-size: 15px;
-   margin-top: 120px;
-}
+
 }
 
 .fh5co-staff img {
@@ -1064,7 +1177,6 @@ margin-top: 25%;
 }
 
 #fh5co-blog {
-  padding: 7em 0;
   position: relative;
   clear: both;
   background: #f7f7f7;
@@ -1443,33 +1555,132 @@ margin-top: 25%;
     padding: 3em 0;
   }
 }
-.fh5co-pricing .pricing {
-  display: block;
-  float: left;
-  margin-bottom: 30px;
+.gtco-container {
+  max-width: 1300px;
+  position: relative;
+  margin: 50px auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.fh5co-pricing .price-box {
+.gtco-cover > .gtco-container {
+  position: relative;
+  z-index: 10;
+}
+.price-box1 {
+  background: #fff;
+  border: 2px solid #ECEEF0;
   text-align: center;
   padding: 30px;
-  background: #fff;
+  margin-bottom: 40px;
+  position: relative;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
+  background-image: url('../images/Services/pexels1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 550px;
+}
+.price-box2 {
+  background: #fff;
+  border: 2px solid #ECEEF0;
+  text-align: center;
+  padding: 30px;
   margin-bottom: 40px;
   position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background-image: url('../images/Services/pexels2.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 550px;
+
+
 }
-.fh5co-pricing .price-box.popular .btn-select-plan {
-  background: black;
+.price-box3 {
+  background: #fff;
+  border: 2px solid #ECEEF0;
+  text-align: center;
+  padding: 29px;
+  margin-bottom: 40px;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background-image: url('../images/Services/pexels3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 550px;
+
 }
-.fh5co-pricing .price-box.popular .price {
-  color: black;
-}
-.fh5co-pricing .price-box .btn-select-plan {
-  padding: 10px 20px;
-  background: #5bc0de;
+
+.price-box3.popular .popular-text {
+  top: 0;
+  left: 50%;
+  margin-left: -54px;
+  margin-top: -2em;
+  position: absolute;
+  padding: 4px 20px;
   color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
 }
+
+#hr-2 {
+  margin-top: 57px;
+}
+
+.pricing-plan {
+  margin: 0 0 30px 0;
+  padding: 0;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: white;
+}
+
+.price h1{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-top: 48%;
+}
+
+@media  screen and(max-width: 768px) {
+
+}
+ #point {
+ }
+.price .currency {
+  font-size: 20px;
+  top: -1.2em;
+}
+.price small {
+  font-size: 16px;
+}
+
+.pricing-info  {
+ display: none;
+ gap: 10px;
+}
+#list-1 {
+  display: flex;
+  gap: 
+  10px;
+}
+.pricing-info li {
+ font-size: 8px;
+}
+/*  */
 .fh5co-pricing .pricing-plan {
   margin: 0 0 50px 0;
   padding: 0;
@@ -1508,6 +1719,9 @@ margin-top: 25%;
 .js .animate-box {
   opacity: 0;
 }
+.what {
+  
+}
 /*# sourceMappingURL=style.css.map */
 .image-container-row {
   display: flex;
@@ -1515,7 +1729,11 @@ margin-top: 25%;
   justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center; /* Centra el contenido verticalmente */
 }
-
+.image-container-row .images {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 480px);
+}
 .image-container-modal {
   position: relative;
   cursor: pointer;
