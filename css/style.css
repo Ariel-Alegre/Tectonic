@@ -645,14 +645,25 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .list-video span{
-    display: none;
-  }
-  .span-video {
-    display: none;
+  .text-video h1 {
+    font-size:  35px;
+ }
 
-    
-     }
+ .span-video {
+  margin-top: -80px;
+}
+
+.span-video span {
+  font-size: 17px;
+}
+
+.list-video {
+  gap: 400px;
+}
+
+.list-video span {
+}
+
 }
 
 
