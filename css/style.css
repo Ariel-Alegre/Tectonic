@@ -406,7 +406,7 @@ h1, h2, h3, h4, h5, h6, figure {
     position: fixed;
   }
   #fh5co-header .header-inner img {
-    width: 80px;
+    width: 130px;
     margin-top: 10px;
     margin-left: 0px;
   }
@@ -612,26 +612,36 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-top: 80px;
   }
   .text-video h1 {
-     font-size: 17px;
+     font-size: 10px;
      margin-top: 50px;
   }
 
   .text-video p {
-    font-size: 11px;
+    font-size: 8px;
     font-weight: 400;
     color: white;
+    margin-top: -20px;
     
   }
 
-  .list-video span{
-    display: none;
+  .list-video {
+    font-size: 10px;
+    gap: 200px;
+  }
+
+  .list-video span {
+    font-size: 8px;
   }
 
   .span-video {
-    display: none;
+    margin-top: -40px;
+  }
+
+  .span-video span {
+    font-size: 8px;
+  }
 
  
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
